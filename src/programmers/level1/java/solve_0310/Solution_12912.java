@@ -1,4 +1,4 @@
-package programmers.level1.java;
+package programmers.level1.java.solve_0310;
 
 import java.util.*;
 import java.util.stream.*;

@@ -1,4 +1,4 @@
-package programmers.level1.java;
+package programmers.level1.java.solve_0310;
 import java.util.*;
 public class Solution_12901_others {
     public String getDayName(int month, int day) {
