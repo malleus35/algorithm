@@ -2,7 +2,6 @@ package programmers.level1.java;
 
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class Solution_72410 {
     public String solution(String new_id) {
@@ -17,11 +16,6 @@ public class Solution_72410 {
             } else finalAnswer += answer.charAt(i);
         }
         answer = finalAnswer;
-//        answer = Arrays.stream(answer.split("")).map(e -> {
-//            int tIndex = finalAnswer.indexOf(e);
-//            if((tIndex == 0 || tIndex == finalAnswer.length() - 1) && e.equals(".")) return "";
-//            else return e;
-//        }).collect(Collectors.joining());
         answer = answer.equals("") ? "a" : answer;
         answer = Arrays.stream(answer.split("")).limit(15).collect(Collectors.joining());
         answer = answer.charAt(answer.length() - 1) == '.' ? answer.substring(0, answer.length() - 1) : answer;
